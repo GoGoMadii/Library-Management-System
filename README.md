@@ -2,7 +2,7 @@
 Author - 
         Hemalatha K            
         Yogesh Kumar R V        : https://github.com/yogivirat
-Checkout our Team Github        : https://github.com/Hermoine-Harry
+Checkout our Team Github        : https://github.com/Hermoine-Harry @Hermoine-Harry
 
 This is a Open Source Desktop Application for School/College Library developed purely from Webkits(HTML, CSS, JS) and electron js. MySQL is used as database.
 
