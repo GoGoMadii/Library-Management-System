@@ -1,0 +1,137 @@
+#student, #staff {
+  margin: 10px;
+  margin-left: 10px;
+}
+.centerCard {
+  text-align: left!important;
+  padding: 30px;
+}
+#centerBox, #qr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+#log{
+background-color: #4CAF50;
+color: white;
+border: none;
+cursor: pointer;
+width: 60%;
+margin: 5px auto;
+padding: 15px;
+    box-shadow: 0px 5px 5px #ccc;
+    border-radius: 5px;
+    border-top: 1px solid #e9e9e9;
+display:block;
+text-align:center;
+}
+ #adminTable, #studentTable, #bookTransactionTable, #staffTable, #bookTable, #borrowBookTable,
+ #borrowStudentTable, #bookReturnTable, #bookRenewTable,#payFineTable, #bookReplaceTable {
+  font-family: Arial, Helvetica, sans-serif;
+   border-collapse: collapse;
+   width: 80%;
+   margin: auto ;
+}
+#nptelTable,#lendTable {
+  font-family: Arial, Helvetica, sans-serif;
+   border-collapse: collapse;
+   width: 40%;
+   margin: auto ;
+}
+
+#nptelTable th, #adminTable th, #studentTable th, #bookTransactionTable th, #staffTable th, #bookTable th, #borrowBookTable th, #borrowStudentTable th, #lendTable th,
+#bookReturnTable th ,#bookRenewTable th, #payFineTable th, #bookReplaceTable th{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #04AA6D;
+  color: white;
+}
+#nptelTable td, #nptelTable th, #adminTable td, #adminTable th, #studentTable th, #studentTable td, #bookTransactionTable th, #bookTransactionTable td, #staffTable td, #staffTable th, #bookTable th, #bookTable td,
+#borrowBookTable td, #borrowBookTable th, #borrowStudentTable td, #borrowStudentTable th, #lendTable td, #lendTable th,
+#bookReturnTable td, #bookReturnTable th, #bookRenewTable th, #bookRenewTable td, #payFineTable th, #payFineTable td,
+#bookReplaceTable th, #bookReplaceTable td{
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+#nptelTable tr:hover {
+  background-color: #96BAFF;
+}
+
+
+option {
+  text-align: center;
+}
+    /* testimonial section */
+#testimonial-carousel {
+  /* text-align: center; */
+  padding: 50px;
+}
+.colouredSection {
+  background-color: #6B7AA1!important;
+  width: 70%!important;
+  height: 40%;
+}
+.testimonial-image {
+  width: 25%;
+  float: left;
+  padding: 3%;
+}
+#ajaybabu {
+  line-height: 2rem!important;
+  font-size: 1.2rem;
+}
+.testimonial-text {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  color: #fff;
+  padding: 15px 50px;
+
+}
+.burr {
+  padding: 3% 0;
+}
+/* .container-fluid {
+  padding: 7% 15%;
+} */
+/* contactus css */
+.skill-row{
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+  line-height: 3;
+  font-size: 1rem;
+}
+.computer-image{
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+  /* margin-right: 100px auto; */
+  /* padd */
+  /* padding-left: 0px; */
+  /* margin: 15px 30px 15px 0px; */
+ }
+.painting-image{
+  width: 25%;
+  float: right;
+  margin-left: 10px;
+}
+.mit-image {
+  width: 100%!important;
+  text-align: center;
+  padding:  3px;
+}
+ .skill-row span {
+  display: block;
+}
+.myCard {
+  border-width: medium!important;
+  border-color: #000000!important;
+}
+.colouredSection h4  {
+  font-size: 2rem!important;
+}
+#gokul span {
+  display: block;
+}

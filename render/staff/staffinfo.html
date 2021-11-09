@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>AUTO-LMS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="../home/css/style.css">
+  <link rel="stylesheet" href="css/aBookSearch-table.css">
+
+</head>
+
+<body>
+  <img class="logo1" src="..\imgs\lms-logo.jpg" alt="">
+  <div class="title-div"  >
+    <!-- <div class="logo-div" > -->
+      <h5 id="outer-div"  >
+        <span class="big-heading child" id="inner-div">
+            LIBRARY MANAGEMENT SYSTEM
+         </span>
+      </h5>
+    <!-- </div> -->
+  </div>
+  <div class="wrapper d-flex align-items-stretch">
+    <nav id="sidebar" class="active">
+      <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+          <i class="fa fa-bars"></i>
+          <span class="sr-only">Toggle Menu</span>
+        </button>
+      </div>
+      <div class="p-4">
+        <h1><a href="staff.html" class="logo">LMS</a></h1>
+        <ul class="list-unstyled components mb-5">
+          <li class="active">
+            <a href="staff.html"><span class="fa fa-home mr-3"></span> Home</a>
+          </li>
+          <li>
+            <a href="../additional/nptelLinks.html"><span class="fa fa-link mr-3"></span> NPTEL links</a>
+          </li>
+          <li>
+            <a href="../additional/e-resources.html"><span class="fa fa-book mr-3"></span>EResources</a>
+          </li>
+          <li>
+            <a href="../additional/aboutus.html"><span class="fa fa-question-circle mr-3"></span>ABOUT US</a>
+          </li>
+          <li>
+            <a href="../additional/contact.html"><span class="fa fa-paper-plane mr-3"></span> Contact</a>
+          </li>
+          <li>
+            <a href="../home/index.html"><span class="fa fa-sign-out-alt"></span> Logout</a>
+          </li>
+        </ul>
+
+<!-- <i class="fas fa-sign-out-alt"></i> -->
+
+        <div class="footer">
+          <!-- <p><! Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          <!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a> -->
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        </div>
+
+      </div>
+    </nav>
+
+<div id="content" class="p-4 p-md-5 pt-5 parent">
+      <div class="card centerCard" id="loginCard">
+        <button class="btn btn-primary col-sm-2" id="log" type="button" onclick="showDetails()"name="button">View</button>
+        <p>NAME : <span class="form-control" id="studentName"></span></p>
+        <p>STAFF ID : <span class="form-control"  id="RegNo"></span></p>
+        <p>DESIGNATION : <span class="form-control"  id="Des"></span></p>
+        <p>DOB : <span class="form-control"  id="dob"> </span></p>
+        <p>Mobile No : <span class="form-control"  id="mn"></span></p>
+        <p>Fine Pending : <span class="form-control"  id="fp"></span></p>
+      </div>
+
+        <table id="bookTable">
+          <tr>
+            <th>BOOK ID</th>
+            <th>BORROWED DATE</th>
+            <th>RETURN DATE</th>
+          </tr>
+
+        </table>
+
+
+
+
+</div>
+
+  <script>window.$ = window.jQuery = require('jquery');</script>
+  <script src="js/staffinfo.js" charset="utf-8"></script>
+    <script src="../home/js/jquery.min.js"></script>
+    <script src="../home/js/popper.js"></script>
+    <script src="../home/js/bootstrap.min.js"></script>
+    <script src="../home/js/main.js"></script>
+  </body>
+
+  </html>

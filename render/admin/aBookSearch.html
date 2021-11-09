@@ -1,0 +1,97 @@
+  <!DOCTYPE html>
+  <html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <title>Search Books</title>
+      <!-- Bootstrap link -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <link rel="stylesheet" href="info/acss/aBookSearch-table.css">
+      <link rel="stylesheet" href="../home/css/style.css">
+
+    </head>
+    <body class="cfadmin">
+      <img class="logo1" src="..\imgs\lms-logo.jpg" alt="">
+      <div class="title-div"  >
+        <!-- <div class="logo-div" > -->
+          <h5 id="outer-div"  >
+            <span class="big-heading child" id="inner-div">
+                LIBRARY MANAGEMENT SYSTEM
+             </span>
+          </h5>
+        <!-- </div> -->
+      </div>
+      <!-- navbar section -->
+      <section>
+        <div class="">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark" align="center" role="navigation">
+            <div class="collapse navbar-collapse" >
+              <ul class="navbar-nav mr-auto ">
+                <li class="nav-item">
+                  <a class="nav-link" href="admin.html">Add books <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item  active" >
+                  <a class="nav-link" href="aBookSearch.html">Book search</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="aBookUpdate.html">Book update</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link"  href="bookBorrow.html">Book Issue</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link"  href="bookReturn.html">Book Return</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link"  href="bookRenew.html">Book Renew</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link"  href="payFine.html">Fine</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link"  href="bookReplace.html">Replace</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link"  href="postUpdate.html">Post</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" id="viewInfo" href="viewinfo.html">View Info</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" id="log-out" href="../home/index.html">Logout</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </section>
+      <!-- content section -->
+      <section>
+        <h1 class="header">Book search</h1>
+        <form >
+          <div class="form-group row  " id="centerBox">
+            <label class="col-form-label col-sm-0.5">Book ID:</label>
+            <div class="col-sm-3">
+              <input type="number" id="bookID" class="form-control "  placeholder="search" >
+            </div>
+            <button type="button" onclick="showBooks()" class="btn btn-primary">search</button>
+          </div>
+
+        </form>
+
+    </section>
+    <!-- show book -->
+    <div class="card centerCard" id="loginCard">
+          <p>BOOK ID : <span class="form-control" id="bookid"></span></p>
+          <p>BOOK NAME : <span class="form-control"id="bookTitle"></span></p>
+          <p>AUTHOR NAME : <span class="form-control"id="author"></span></p>
+          <p>BOOK TYPE : <span class="form-control"id="bookType"></span></p>
+          <p>RACK NO : <span class="form-control"id="rackNo"></span></p>
+          <p>COST : <span class="form-control"id="bookCost"></span></p>
+          <p>AVAILABILITY : <span class="form-control"id="avail"></span></p>
+          <p>QUANTITY : <span class="form-control"id="quant"></span> </p>
+          <p>AVAILABLE BY : <span class="form-control"id="availby"></span> </p>
+    </div>
+
+    <script src="js/bookSearch.js" charset="utf-8"></script>
+    </body>
+  </html>

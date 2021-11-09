@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../home/css/style.css">
+    <link rel="stylesheet" href="info/acss/aBookSearch-table.css">
+  </head>
+  <body class="cfadmin">
+    <img class="logo1" src="..\imgs\lms-logo.jpg" alt="">
+    <div class="title-div"  >
+      <!-- <div class="logo-div" > -->
+        <h5 id="outer-div"  >
+          <span class="big-heading child" id="inner-div">
+              LIBRARY MANAGEMENT SYSTEM
+           </span>
+        </h5>
+      <!-- </div> -->
+    </div>
+    <section>
+      <div class="">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="collapse navbar-collapse" >
+            <ul class="navbar-nav mr-auto ">
+              <li class="nav-item ">
+                <a class="nav-link" href="admin.html">Add books <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aBookSearch.html">Book search</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aBookUpdate.html">Book update</a>
+              </li>
+
+
+              <li class="nav-item active ">
+                <a class="nav-link"  href="bookBorrow.html">Book Issue</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link"  href="bookReturn.html">Book Return</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link"  href="bookRenew.html">Book Renew</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link"  href="payFine.html">Fine</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link"  href="bookReplace.html">Replace</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link"  href="postUpdate.html">Post</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" id="viewInfo" href="viewinfo.html">View Info</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" id="log-out" href="../home/index.html">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+    </section>
+    <!-- contents -->
+    <section>
+      <h1  class="header">Book Issue</h1>
+      <form >
+        <div class="form-group row" id="centerBox">
+          <label class="col-sm-0.5 col-form-label">Book ID:</label>
+          <div class="col-sm-3">
+            <input type="number" id="bookID" class="form-control" placeholder="search" >
+          </div>
+          <button type="button" onclick="showBooks()" class="btn btn-primary">search</button>
+        </div>
+
+      </form>
+        <table id="borrowBookTable">
+          <tr>
+             <th><p>BOOK ID </p></th>
+             <th><p>BOOK NAME  </p></th>
+             <th><p>AUTHOR NAME </p></th>
+             <th><p>BOOK TYPE  </p></th>
+             <th><p>RACK NO </p></th>
+             <th><p>AVAILABILITY </p></th>
+             <th><p>QUANTITY </p></th>
+          </tr>
+          <tr>
+            <td><span id="bookid"></span></td>
+            <td><span id="bookTitle"></span></td>
+            <td><span id="author"></span></td>
+            <td><span id="bookType"></span></td>
+            <td><span id="rackNo"></span></td>
+            <td><span id="avail"></span></td>
+            <td><span id="quant"></span> </td>
+          </tr>
+        </table>
+        <!-- <p>COST : <span id="bookCost"></span></p> -->
+  </section>
+  <!-- borrow person details -->
+  <section>
+    <div class="">
+      <h5 class="header">PATRON DETAILS</h5>
+      <form >
+      <div class=" row" id="centerBox">
+        <label class="col-sm-0.5 col-form-label">Patron :</label>
+        <input type="radio" name="category" id="student">Student
+        <input type="radio" name="category" id="staff" >Staff
+      </div>
+        <div class="row" id="centerBox">
+          <label class="col-sm-0.5 col-form-label">Patron Reg No:</label>
+          <div class="col-sm-3">
+            <input type="number" id="studentID" class="form-control" placeholder="search" >
+
+           </div>
+
+          <button type="button" onclick="showPatronDetails()" class="btn btn-primary">search</button>
+        </div>
+
+      </form>
+    </div>
+
+
+
+      <table id="borrowStudentTable">
+        <tr>
+          <th><p>Patron Name </p></th>
+          <th><p>Register No  </p></th>
+          <th><p>DOB </p></th>
+          <th><p>Fine </p></th>
+        </tr>
+        <tr>
+          <td><span id="studentName"></span></td>
+          <td><span id="studentReg"></span></td>
+          <td><span id="studentDOB"></span></td>
+          <td><span id="studentFine"></span></td>
+        </tr>
+      </table>
+
+
+      <h5 class="header">LEND DETAILS</h5>
+
+      <table id="lendTable">
+        <tr>
+          <th><p>Borrow Date </p></th>
+          <th><p>Return Date</p></th>
+        </tr>
+        <tr>
+          <td><span id="borrowDate"></span></td>
+          <td> <span id="ReturnDate"></td>
+        </tr>
+      </table>
+
+
+
+      <button type="button"  onclick="borrowBook()" class="btn btn-primary col-sm-2" id="log">Lend Book</button>
+
+  </section>
+
+
+    <script src="js/bookBorrow.js" charset="utf-8"></script>
+
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>View order</title>
+    <!-- Bootstrap link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../home/css/style.css">
+  </head>
+  <body class="cfadmin">
+    <img class="logo1" src="..\imgs\lms-logo.jpg" alt="">
+    <div class="title-div"  >
+      <!-- <div class="logo-div" > -->
+        <h5 id="outer-div"  >
+          <span class="big-heading child" id="inner-div">
+            LIBRARY MANAGEMENT SYSTEM
+           </span>
+        </h5>
+      <!-- </div> -->
+    </div>
+    <!-- navbar section -->
+    <section>
+      <div class="">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="collapse navbar-collapse" >
+            <ul class="navbar-nav mr-auto ">
+              <li class="nav-item ">
+                <a class="nav-link" href="admin.html">Add books <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aBookSearch.html">Book search</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aBookUpdate.html">Book update</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="aViewOrder.html">View order</a>
+              </li>
+
+              <li class="nav-item ">
+                <a class="nav-link"  href="bookBorrow.html">Book Issue</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link"  href="bookReturn.html">Book Return</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link"  href="bookRenew.html">Book Renew</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link"  href="payFine.html">Fine</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link"  href="postUpdate.html">Post</a>
+              </li>
+
+              <li class="nav-item ">
+                <a class="nav-link" id="viewInfo" href="viewinfo.html">View Info</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" id="log-out" href="../home/index.html">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <!-- content section -->
+    <section>
+      <h1  class="header">View Order</h1>
+      <form >
+        <div class="form-group row">
+          <label class="col-sm-2 col-form-label">Book name:</label>
+          <div class="col-sm-4">
+            <input type="number" class="form-control" placeholder="search" >
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col-sm-2 col-form-label">Author name:</label>
+          <div class="col-sm-4">
+            <input type="number" class="form-control" placeholder="search" >
+          </div>
+          <button type="submit" class="btn btn-primary">search</button>
+        </div>
+
+      </form>
+    </section>
+
+  </body>
+</html>

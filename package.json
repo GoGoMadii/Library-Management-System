@@ -1,0 +1,29 @@
+{
+  "name": "LMS ",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "Yogesh Kumar R V",
+  "license": "ISC",
+  "dependencies": {
+    "-": "^0.0.1",
+    "bootstrap": "^5.1.3",
+    "jquery": "^3.6.0",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "electron": "^15.3.0",
+    "electron-builder": "^22.13.1",
+    "eletron": "^0.0.1-security"
+  },
+  "keywords": [],
+  "description": "Open Sources Library Management Software for developers to change according to their interest",
+  "build": {
+    "win": {
+      "target": "zip"
+    }
+  }
+}
